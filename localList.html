@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<meta name="viewport" content= "width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="localList2.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+
+	
+	<title>Custom List</title>
+	
+	</head>
+
+	
+	<body>
+		<main>
+			<section id="nameSection">
+				<div id="photoAndName">
+					<img src="" id="photo">
+					<h3 id="welcomeMsg">Welcome, </h3>
+				</div>
+				<div id="optionsSectionWhole">
+					<div id="optionsSectionLeft">
+						<div id="showOptions">Options &plus;</div>
+						<div id="options">
+							<div id="changePhoto" class="changePhoto">Change Photo</div>
+							<div id="changeMsg" class="changeMsg">Change Name</div>
+							<div id="changeList" class="changeList">Rename List</div>
+							<a href="#" class="tutorialLink" target="_blank">
+								<div id="tutorial" class="tutorial">Tutorial *Coming soon*</div>
+							</a>
+						</div>
+					</div>
+					<div id="optionsSectionRight">
+						<form id="photoForm" method="get" autocomplete="off">
+							<input id="changePhotoHere" type="text" placeholder="Your Photo URL Here" autocomplete="off">
+							<div id="photoWarning"></div>
+							<div class="formBtns">
+								<button id="photoBtn" class="photoBtn" type="button">Change Photo</button>
+								<button id="photoCancel" class="photoCancel" type="button">Cancel</button>
+							</div>
+						</form>
+						<form id="nameForm" method="get" autocomplete="off">
+							<input id="changeNameHere" type="text" placeholder="Your Name Here" autocomplete="off">
+							<div id="nameWarning"></div>
+							<div class="formBtns">
+								<button id="nameBtn" class="nameBtn" type="button">Change Name</button>
+								<button id="nameCancel" class="nameCancel" type="button">Cancel</button>
+							</div>
+						</form>
+						<form id="listForm" method="get" autocomplete="off">
+							<input id="changeListNameHere" type="text" placeholder="List Name Here" autocomplete="off">
+							<div id="listNameWarning"></div>
+							<div class="formBtns">
+							<button id="listBtn" class="listBtn" type="button">Change List Name</button>
+							<button id="listCancel" class="listCancel" type="button">Cancel</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</section>
+			
+
+
+
+
+			<section id="listNameSection">
+				<h1 id="listName"></h1>
+			</section>
+			
+			<div id="theList">
+				<div id="emptyMsg"></div>
+			</div>
+			
+			<form id="itemForm" method="get" autocomplete="off">
+				<input id="addItem" type="text" placeholder="New Item" autocomplete="off">
+				<div id="listWarning"></div>
+				<button id="itemBtn" type="button">Add Item</button>
+				<button id="clearBtn" type="button">Clear List</button>
+			</form>
+		
+
+		<!-- <footer>Designed and developed by Javier Torres - 2023</footer> -->
+
+		</main>	
+<!------ JAVASCRIPT --------->
+<script src="localList3.js"></script>
+	</body>
+
+</html>

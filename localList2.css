@@ -1,0 +1,418 @@
+* {
+	margin: 0;
+	padding: 0;
+    font-family: 'Inter', Helvetica, sans-serif;
+    
+}
+
+body {
+    background-color: rgb(203, 222, 253);
+    /* width: 100%; */
+}
+
+
+/* WIDELY USED CODE */
+
+
+
+#photoAndName {
+    display: flex;
+    align-items: center;
+    background-color: cornflowerblue;
+}
+
+#photo {
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    background-color: rgba(203, 222, 253, 0.7);
+    margin: 10px 15px;
+}
+
+#welcomeMsg {
+    letter-spacing: 1.5px;
+}
+
+#optionsSectionWhole {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    transition: 1000ms;
+}
+
+#optionsSectionLeft{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    transition: 1000ms;
+}
+
+#optionsSectionRight {
+    display: flex;
+    justify-content: center;
+    transition: 1000ms;
+}
+
+
+#showOptions {
+    font-size: medium !important;
+    color: blue !important;
+    padding: 12px 20px !important;
+    border-radius: 0 0 5px 5px !important;
+    background-color: rgb(235, 235, 255) !important;
+    transition: 1000ms !important;
+}
+
+#showOptions:hover {
+    cursor: pointer;
+    background-color: cornflowerblue;
+    color: rgba(255, 255, 255, .85);
+    
+}
+
+#optionsChangeColor {
+    font-size: medium !important;
+    background-color: cornflowerblue !important;
+    color: whitesmoke !important;
+    padding: 12px 20px !important;
+    border-radius: 0 !important;
+    transition: 1000ms !important;
+}
+#optionsChangeColor:hover {
+    cursor: pointer;
+    color: rgba(255, 255, 255, .85);
+    
+}
+
+#options {
+    display: none;
+    flex: 1;
+    color: blue;
+    font-size: small;
+}
+
+#options div {
+    font-size: medium;
+    padding: 12px 20px;
+    transition: 400ms;
+    
+}
+
+#options div:last-of-type {
+    border-radius: 0 0 5px 5px;
+}
+
+#options div:hover {
+    cursor: pointer;
+    background-color: rgb(46, 111, 215);
+    color: whitesmoke;
+}
+
+.tutorialLink {
+    text-decoration: none;
+} 
+
+.changePhoto,
+.changeMsg,
+.changeList,
+.tutorial {
+    background-color: rgb(235, 235, 255)!important;
+    color: blue !important;
+}
+
+.activeOption {
+    background-color: rgb(46, 111, 215) !important;
+    color: whitesmoke !important;
+}
+
+#photoForm,
+#nameForm,
+#listForm {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: medium;
+
+    padding: 40px 0;
+}
+
+.formBtns {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    max-width: 300px;
+}
+
+#changePhotoHere,
+#changeNameHere,
+#changeListNameHere {
+    width: 80%;
+    max-width: 500px;
+    padding: 10px 3px;
+    text-align: center;
+    letter-spacing: 1.2px;
+    border-radius: 4px;
+    border: 2px solid grey;
+    margin: 0 auto;
+}
+
+.photoBtn,
+.nameBtn,
+.listBtn {
+    background-color: rgb(156, 216, 253);
+    border: 3px solid cornflowerblue;
+    color: blue;
+    border-radius: 5px;
+    letter-spacing: 1.2px;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.photoCancel,
+.nameCancel,
+.listCancel {
+    background-color: rgba(200, 0, 0, 1);
+    border: 3px solid darkred;
+    color: whitesmoke;
+    border-radius: 5px;
+    letter-spacing: 1.2px;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.photoBtn:hover,
+.nameBtn:hover,
+.listBtn:hover,
+.photoCancel:hover,
+.nameCancel:hover,
+.listCancel:hover {
+    cursor: pointer;
+}
+
+
+
+
+#photoWarning,
+#nameWarning,
+#listNameWarning,
+#listWarning {
+    color: red;
+    font-size: small;
+    text-align: center;
+    padding: 5px;
+}
+
+
+
+/* input {
+    width: 80%;
+    padding: 5px 3px;
+    text-align: center;
+    letter-spacing: 1.2px;
+    border-radius: 4px;
+    border: 2px solid grey;
+    margin: 0 auto;
+} */
+
+
+
+/* .flexedBtns {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    width: 60%;
+} */
+
+/* .basicBtn {
+    flex: 1;
+    letter-spacing: 1.2px;
+    border: none;
+    border-radius: 4px;
+    padding: 5px 3px;
+    margin: 5px 0;
+    transition: 400ms;
+} */
+
+/* .basicBtn:nth-child(1) {
+    background-color: rgb(156, 216, 253);
+    border: 3px solid cornflowerblue;
+    color: blue;
+}
+
+.basicBtn:nth-child(2) {
+    background-color: rgba(200, 0, 0, 1);
+    border: 3px solid darkred;
+    color: whitesmoke;
+}
+
+.basicBtn:hover {
+    cursor: pointer;
+    box-shadow: 0px 4px 9px 0px rgba(0, 0, 0, .3);
+} */
+
+
+
+#listName {
+    text-align: center;
+    padding: 40px 0 5px 0;
+    letter-spacing: 1px;
+}
+
+#theList {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: rgb(235, 235, 255);
+    padding: 20px;
+    margin: 20px auto 20px auto;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 500px;
+}
+
+.listDiv {
+    display: flex;
+    margin: 8px 0;
+    border-radius: 6px;
+    transition: 500ms;
+}
+
+.listDiv:active {
+    position: relative;
+    top: 2px;
+}
+
+.listDiv:hover {
+    box-shadow: 0px 4px 9px 0px rgba(0, 0, 0, .3);
+   
+}
+
+.listItem {
+    flex: 5;
+    display: flex;
+    justify-content: center;
+    background-color: cornflowerblue;
+    color: rgb(228, 237, 250);
+    letter-spacing: 1.2px;
+    line-height: 22px;
+    padding: 10px;
+    border-radius: 6px 0px 0px 6px;
+    transition: background 600ms ease-in-out,
+    color 600ms ease-in-out;
+}
+
+.listItem:hover {
+    cursor: pointer;
+}
+
+.newClass {
+    background-color: rgba(0, 0, 0, .6);
+    text-decoration: line-through;
+    color: black;
+}
+
+
+.deleteItem {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 0px 6px 6px 0px;
+    background-color: rgb(46, 111, 215);
+    color: whitesmoke;
+    transition: color 400ms ease-in-out,
+                background 400ms ease-in-out;
+}
+
+.deleteItem:hover {
+    cursor: pointer;
+    background-color: darkred;
+}
+
+
+
+#itemForm {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 30px 0;
+}
+
+#addItem {
+    width: 60%;
+    max-width: 500px;
+    padding: 10px 3px;
+    text-align: center;
+    letter-spacing: 1.2px;
+    border-radius: 4px;
+    border: 2px solid grey;
+    margin: 0 auto;
+}
+
+#itemBtn {
+    width: 50%;
+    max-width: 400px;
+    margin: 10px auto;
+    padding: 10px 0;
+    border-radius: 4px;
+    background-color: rgb(156, 216, 253);
+    color: blue;
+    border: 3px solid cornflowerblue;
+    transition: 400ms;
+}
+
+#itemBtn:hover,
+#clearBtn:hover {
+    cursor: pointer;
+    box-shadow: 0px 4px 9px 0px rgba(0, 0, 0, .3);
+}
+
+
+
+
+
+#clearBtn {
+    width: 50%;
+    max-width: 400px;
+    color: whitesmoke;
+    background-color: rgba(200, 0, 0, 1);
+    letter-spacing: 1.2px;
+    padding: 10px 0;
+    margin: 10px auto;
+    border: 3px solid darkred;
+    border-radius: 4px;
+    transition: 400ms;
+}
+
+
+footer {
+    padding: 5px 0;
+    text-align: center;
+    position: relative;
+    background-color: cornflowerblue;
+}
+
+
+@media only screen and (max-width: 800px)
+{
+	
+
+}
+
+
+@media only screen and (max-width: 500px)
+{
+	#optionsSectionWhole {
+        flex-direction: column;
+    }
+
+
+    #showOptions {
+        border-radius: 0;
+    }
+   
+    
+}
